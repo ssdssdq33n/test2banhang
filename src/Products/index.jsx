@@ -49,8 +49,8 @@ function Products({
     },
     {
       id: 2,
-      name: "GRANOLA SOCOLA",
-      price: 150,
+      name: "GRANOLA CHOCOLATE",
+      price: 140,
       rating: 4,
       img: img3,
       quantity: 1,
@@ -59,7 +59,7 @@ function Products({
     },
     {
       id: 3,
-      name: "GRANOLA NGUYÊN BẢN",
+      name: "GRANOLA ORIGINAL",
       price: 120,
       rating: 5,
       img: img2,
@@ -84,10 +84,13 @@ function Products({
     );
   };
   const priceBodyTemplate = (product) => {
-    return <h3>{product.price}.000 VND</h3>;
+    return <h4>{product.price}.000 VND</h4>;
   };
   const ratingBodyTemplate = (product) => {
     return <Rating value={product.rating} readOnly cancel={false} />;
+  };
+  const nameBodyTemplate = (product) => {
+    return <h3>{product.name}</h3>;
   };
   const buttonBodyTemplate = (data) => {
     return (
@@ -126,7 +129,11 @@ function Products({
         filters={giatri}
         tableStyle={{ minWidth: "60rem" }}
         paginator
-        currentPageReportTemplate="Hiển thị {first} đến {last} trong số {totalRecords} sản phẩm"
+        currentPageReportTemplate={
+          value === "VNM"
+            ? "Hiển thị {first} đến {last} trong số {totalRecords} sản phẩm"
+            : "Display {first} to {last} among {totalRecords} products"
+        }
         rows={10}
         rowsPerPageOptions={[2, 3, 4]}
         className="datatable-responsive"
@@ -135,6 +142,7 @@ function Products({
         <Column field="id" header="STT"></Column>
         <Column
           field="name"
+          body={nameBodyTemplate}
           header={value === "VNM" ? "Tên sản phẩm" : "Name"}
         ></Column>
         <Column

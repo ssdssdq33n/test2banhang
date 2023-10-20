@@ -47,10 +47,10 @@ function Header() {
           zoomSrc={logo}
         />
         <div
-          className=" flex justify-content-center align-items-center"
+          className=" flex justify-content-center align-items-center andi w-1 md:w-5"
           style={{ width: "45%" }}
         >
-          <div className="p-inputgroup flex-1 p-float-label">
+          <div className="p-inputgroup flex-1 p-float-label hidden md:block">
             <InputText
               onChange={(e) =>
                 setGiatri({
@@ -75,8 +75,8 @@ function Header() {
           </div>
         </div>
         <div
-          className="flex justify-content-between align-items-center"
-          style={{ width: "23%" }}
+          className="flex justify-content-between align-items-center w-5 md:w-3"
+          style={{}}
         >
           <span
             className="pi pi-user flex justify-content-center align-items-center"

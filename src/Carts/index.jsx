@@ -2,7 +2,7 @@ import { Button } from "primereact/button";
 import { DataView } from "primereact/dataview";
 import { Rating } from "primereact/rating";
 import { Tag } from "primereact/tag";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Dialog } from "primereact/dialog";
 import Thanhtoan from "./Thanhtoan";
 import { Toast } from "primereact/toast";
@@ -17,6 +17,7 @@ function Carts({
   setSoluong,
 }) {
   const [cart, setCart] = useState({});
+  const [quan, setQuan] = useState();
   const [showThanhToan, setShowThanhToan] = useState(false);
   const toast = useRef(null);
 
@@ -46,10 +47,9 @@ function Carts({
         return "danger";
 
       default:
-        return null;
+        return "warning";
     }
   };
-
   const itemTemplate = (product) => {
     let coin = product.price * product.quantity;
     return (
@@ -77,6 +77,23 @@ function Carts({
                   severity={getSeverity(product)}
                 ></Tag>
               </div>
+              <span className="p-buttonset">
+                <Button
+                  severity="danger"
+                  label="-"
+                  onClick={() => {
+                    setQuan(product.quantity--);
+                    setCount(count - 1);
+                  }}
+                />
+                <Button
+                  label="+"
+                  onClick={() => {
+                    setQuan(product.quantity++);
+                    setCount(count + 1);
+                  }}
+                />
+              </span>
             </div>
             <div className="flex sm:flex-column align-items-center sm:align-items-end gap-3 sm:gap-2">
               <span className="text-2xl font-semibold">${coin}.000 VND</span>
