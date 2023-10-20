@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/test2banhang/static/css/main.77df9818.css",
+    "main.js": "/test2banhang/static/js/main.8d21cb55.js",
+    "static/js/787.0cefdfc3.chunk.js": "/test2banhang/static/js/787.0cefdfc3.chunk.js",
+    "static/media/primeicons.svg": "/test2banhang/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/Inter-italic.var.woff2?v=3.19": "/test2banhang/static/media/Inter-italic.var.30807be7abc48ba8c73c.woff2",
+    "static/media/img_granolasocola.jpg": "/test2banhang/static/media/img_granolasocola.d358c38e264c961a9ffe.jpg",
+    "static/media/img_granola.jpg": "/test2banhang/static/media/img_granola.2a51614f29bfb82a5558.jpg",
+    "static/media/Inter-roman.var.woff2?v=3.19": "/test2banhang/static/media/Inter-roman.var.ba4caefcdf5b36b438db.woff2",
+    "static/media/img_granolanguyenban.jpg": "/test2banhang/static/media/img_granolanguyenban.d4f9e9a8ac4c17d870fa.jpg",
+    "static/media/img_mixnhiu.jpg": "/test2banhang/static/media/img_mixnhiu.b33d789794f1d9d15cc4.jpg",
+    "static/media/primeicons.eot": "/test2banhang/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/test2banhang/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/test2banhang/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/img_logo.jpg": "/test2banhang/static/media/img_logo.07b6747efda2cf379d00.jpg",
+    "static/media/primeicons.woff2": "/test2banhang/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "index.html": "/test2banhang/index.html",
+    "main.77df9818.css.map": "/test2banhang/static/css/main.77df9818.css.map",
+    "main.8d21cb55.js.map": "/test2banhang/static/js/main.8d21cb55.js.map",
+    "787.0cefdfc3.chunk.js.map": "/test2banhang/static/js/787.0cefdfc3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77df9818.css",
+    "static/js/main.8d21cb55.js"
+  ]
+}
